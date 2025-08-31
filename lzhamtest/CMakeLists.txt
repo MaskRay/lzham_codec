@@ -1,5 +1,4 @@
 PROJECT(lzhamtest)
-cmake_minimum_required(VERSION 2.8)
 option(BUILD_X64 "build 64-bit" TRUE)
 
 message("Initial BUILD_X64=${BUILD_X64}")
@@ -58,3 +57,4 @@ add_executable(${PROJECT_NAME} ${SRC_LIST})
 
 target_link_libraries(${PROJECT_NAME}
     lzhamdll)
+install(TARGETS ${PROJECT_NAME} DESTINATION bin)

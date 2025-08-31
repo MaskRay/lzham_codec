@@ -1,5 +1,5 @@
-# PROJECT(lzham)
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.12)
+project(lzham LANGUAGES CXX)
 option(BUILD_X64 "build 64-bit" ON)
 option(BUILD_SHARED_LIBS "build shared/static libs" ON)
 
